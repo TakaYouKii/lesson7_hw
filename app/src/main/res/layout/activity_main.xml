@@ -13,11 +13,24 @@
         android:layout_marginHorizontal="20dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/container">
+        <Button
+            android:id="@+id/next_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/orange"
+            android:layout_marginTop="50dp"
+            android:paddingVertical="10dp"/>
+
+
         <TextView
             android:id="@+id/text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
+            android:maxLines="1"
             android:textColor="@color/white"
             android:textSize="80sp"
             android:ellipsize="end"
@@ -156,7 +169,6 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_equal"
                 style="@style/Orange.Button"
-
                 android:text="@string/equal"
                 />
         </LinearLayout>
