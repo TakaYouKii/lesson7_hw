@@ -31,12 +31,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, ResultActivity.class);
-                i.putExtra("result", result);
+                i.putExtra("result", "Результат:"+result);
                 startActivity(i);
                 finish();
+
             }
         });
+
+
     }
+
+    public void sendTextToDrawer(String text) {
+        // Выполните необходимые действия с переданным текстом в Navigation Drawer
+        // Например, установите текст в TextView в Navigation Drawer
+        TextView drawerTextView = findViewById(R.id.txt_result);
+        drawerTextView.setText(text);
+    }
+
 
 
 

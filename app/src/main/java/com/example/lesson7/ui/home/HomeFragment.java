@@ -1,5 +1,6 @@
 package com.example.lesson7.ui.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.lesson7.MainActivity;
 import com.example.lesson7.R;
 import com.example.lesson7.databinding.FragmentHomeBinding;
 
@@ -27,6 +29,8 @@ public class HomeFragment extends Fragment {
         View root = binding.getRoot();
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         Button btn_exit = view.findViewById(R.id.btn_exit);
+
+
         btn_exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -35,6 +39,8 @@ public class HomeFragment extends Fragment {
                 }
             }
         });
+
+
         return view;
 
 

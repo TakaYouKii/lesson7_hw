@@ -4,10 +4,103 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_blue"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/app_bar_result">
 
-    <fragment
+
+        <TextView
+            android:id="@+id/txt_policies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="@string/policies"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+        <EditText
+            android:id="@+id/et_policy"
+            app:layout_constraintTop_toBottomOf="@id/txt_policies"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="@string/policy"
+            android:background="@drawable/et_policies"
+            android:layout_marginHorizontal="20dp"
+            style="@style/Policy.EditText"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp"/>
+
+
+
+        <EditText
+            android:id="@+id/et_product_category"
+            app:layout_constraintTop_toBottomOf="@id/et_policy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp"
+            android:hint="@string/product_category"
+            android:background="@drawable/et_policies"
+            android:layout_marginHorizontal="20dp"
+            style="@style/Policy.EditText"
+
+
+            />
+
+        <EditText
+            android:id="@+id/et_origin_country"
+            app:layout_constraintTop_toBottomOf="@id/et_product_category"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="@string/origin_country"
+            android:background="@drawable/et_policies"
+            android:layout_marginHorizontal="20dp"
+            style="@style/Policy.EditText"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp"
+
+
+            />
+
+        <EditText
+            android:id="@+id/et_brand"
+            app:layout_constraintTop_toBottomOf="@id/et_origin_country"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="@string/brand"
+            android:background="@drawable/et_policies"
+            android:layout_marginHorizontal="20dp"
+            style="@style/Policy.EditText"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="15dp"
+
+
+            />
+
+
+
+        <TextView
+            android:id="@+id/txt_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="@string/result"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:layout_marginBottom="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+        <fragment
         android:id="@+id/nav_host_fragment_content_result"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"

@@ -32,4 +32,10 @@
     <string name="menu_settings">Настройки</string>
     <string name="menu_safety">Безопасность</string>
     <string name="exit">Выход</string>
+    <string name="policies">Policies</string>
+    <string name="policy">Policy</string>
+    <string name="product_category">Product Category</string>
+    <string name="origin_country">Origin Country</string>
+    <string name="brand">Brand</string>
+    <string name="result">Result</string>
 </resources>
